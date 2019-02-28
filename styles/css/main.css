@@ -1,0 +1,290 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  background: rgba(235, 235, 235, 0.5);
+  border-bottom: 2px solid #000000;
+}
+.navbar .navbar-brand {
+  color: #000000;
+}
+.navbar .navbar-nav .nav-link {
+  color: #ffffff;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.navbar .navbar-nav .nav-link:hover {
+  box-shadow: 0px 5px 0px;
+}
+
+@media screen and (min-width: 992px) {
+  /* 
+   * Hace que en solo pantallas que sean mas grandes que 992px 
+   * la barra de navegación tenga 100px de alto 
+   */
+  .navbar {
+    height: 100px;
+  }
+  .navbar .navbar-brand {
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 992px) {
+  .navbar {
+    background: #000000;
+  }
+}
+.banner {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.carousel-inner {
+  max-height: 662px;
+}
+
+.carousel-item img {
+  widows: 100%;
+  height: 662px;
+}
+
+.carousel-item .carousel-caption {
+  padding-bottom: 10px;
+}
+
+.carousel-item .carousel-caption .title {
+  margin-bottom: 100px;
+}
+
+.carousel-item .carousel-caption .title h1 {
+  color: #ffffff;
+  font-size: 58px;
+  font-weight: normal;
+  text-shadow: 2px 2px 5px #333333;
+  display: inline;
+}
+.carousel-item .carousel-caption .title p {
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: 100;
+  text-shadow: 2px 2px 5px #333333;
+}
+
+.carousel-item .carousel-caption .btn {
+  border-radius: 0%;
+}
+
+.carousel-item .carousel-caption .btn:hover {
+  color: #079992;
+  background: #ffffff;
+  transition: 600ms;
+}
+
+@media screen and (max-width: 560px) {
+  .carousel-inner {
+    height: 220px;
+  }
+
+  .carousel-item img {
+    height: 220px;
+  }
+}
+.top-title {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #878787;
+}
+
+.title {
+  font-size: 22.5px;
+  font-weight: bold;
+  color: #222222;
+}
+
+.italic {
+  font-family: "Tangerine", cursive;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 35px;
+  color: #878787;
+}
+
+.info-title {
+  font-size: 16px;
+  color: #222222;
+  font-weight: bold;
+}
+
+.stages p {
+  color: #878787;
+}
+.stages .gml-info {
+  width: 900px;
+}
+
+.first-panoramic {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.first-panoramic img {
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 560px) {
+  .first-panoramic {
+    height: 96px;
+  }
+  .first-panoramic img {
+    height: 96px;
+  }
+}
+.slogan .title {
+  font-size: 30px;
+}
+.slogan p {
+  color: #878787;
+}
+.slogan p .emphatized {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.phrase-box {
+  background: #000000;
+}
+.phrase-box .phrase {
+  color: #ffffff;
+  font-weight: bold;
+}
+.phrase-box .contact-btn {
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.phrase-box .contact-btn:hover {
+  background: #ffffff;
+  color: #222222;
+}
+
+.services i {
+  float: left;
+  padding-right: 10px;
+}
+.services .services-info {
+  text-align: left;
+  width: 80%;
+  float: right;
+}
+.services .services-info .info-title {
+  font-weight: normal;
+}
+.services .services-info p {
+  color: #878787;
+  font-size: 13.5px;
+}
+
+.social-gallery .container {
+  width: 95%;
+}
+.social-gallery .container .row .img-container {
+  position: relative;
+  z-index: -1;
+}
+.social-gallery .container .row .img-container img {
+  height: 200px;
+}
+.social-gallery .container .row a {
+  position: absolute;
+  left: 40px;
+  bottom: 20px;
+  height: 160px;
+  width: 85%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 10;
+  text-decoration: none;
+  transition: all 0.7s;
+  display: none;
+}
+.social-gallery .container .row:hover a {
+  display: flex;
+}
+
+.team .team-box {
+  position: relative;
+  left: 2%;
+}
+.team .team-info {
+  display: inline-block;
+  margin: 120px auto;
+}
+.team .team-info img {
+  height: 200px;
+  width: 200px;
+}
+.team .team-info .info .team-description {
+  color: #878787;
+}
+.team .team-info .info a {
+  text-decoration: none;
+  color: #222222;
+  margin: 2px 10px;
+  transition: all 0.5s;
+}
+.team .team-info .info a i {
+  font-size: 20px;
+}
+.team .team-info .info a:hover {
+  color: aqua;
+}
+
+.gml-info {
+  background: #000000;
+  color: #ffffff;
+}
+.gml-info .info-title {
+  color: #ffffff;
+}
+.gml-info .social-icon-wrap {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+.gml-info .social-icon-wrap .fa-facebook-f {
+  left: 35%;
+}
+.gml-info .social-icon-wrap i {
+  position: relative;
+  top: 15%;
+  left: 25%;
+}
+.gml-info .social-icon-wrap:hover {
+  background: #ffffff;
+  color: #222222;
+}
+
+/*# sourceMappingURL=main.css.map */

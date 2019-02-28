@@ -1,0 +1,12 @@
+{
+  "name": "gmlproducciones",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-scss": "sass --watch styles/scss/main.scss styles/css/main.css"
+  },
+  "keywords": [],
+  "author": "Julián",
+  "license": "ISC"
+}
