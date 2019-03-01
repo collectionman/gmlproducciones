@@ -47,9 +47,28 @@ body {
     }
 }
 
+
+@media screen and ( max-width: 560px ) {
+    /* 
+     * Hace que en solo pantallas que sean mas grandes que 992px 
+     * la barra de navegación tenga 100px de alto 
+     */
+    .navbar {
+        position: relative ;
+        z-index: 0 ;
+        .navbar-brand {
+            color: #ffffff ;
+        }
+
+        button {
+            color: #ffffff ;
+        }
+    }
+}
+
 @media screen and ( max-width: 992px ) {
     .navbar {
-        background: #000000 ;
+        background: #928c8c ;
     }
 }
 
