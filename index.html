@@ -10,6 +10,19 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="http://gmlproducciones.org/wp-content/uploads/2018/07/GML-Producciones.png">
 
+    <!-- Super Simple Slider -->
+    <link rel="stylesheet" href="src/SSS-master/sss/sss.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+    <script src="src/SSS-master/sss/sss.js"></script>
+
+    <script>
+        jQuery( function( $ ) {
+            $( '.testimonial-slider' ).sss() ;
+        } ) ; 
+    </script>
+
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
@@ -43,10 +56,10 @@
                         <a class="nav-link" href="#gml-services">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#gml-patners">Clientes</a>
+                        <a class="nav-link" href="#gml-team">Equipo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#gml-team">Equipo</a>
+                        <a class="nav-link" href="#gml-patners">Clientes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#gml-contact">Contacto</a>
@@ -183,7 +196,7 @@
                 </div>
                 <div class="col-md-6">
                     <h1 class="text-uppercase title py-3">¡DEJA QUE NOS ENCARGUEMOS DE LAS FOTOGRAFÍAS!</h1>
-                    <p>Queremos que cada momento especial que tanto esperaste, ya sea tus quince, tu boda o un book queden documentados a la mejor versión 
+                    <p>Queremos que cada momento especial que tanto esperaste, ya sea tus quince, tu boda o un book queden documentados a la mejor versión de
                         <span class="emphatized">GML Producciones.</span>
                     </p>
                 </div>
@@ -438,23 +451,76 @@
     <!-- END TEAM SECTION -->
 
     <!-- START TESTIMONIAL SECTION -->
+    <section class="wrapper">
+        <div class="testimonial-slider">
+            <div class="testimonial-item">
+                <div class="testimonial-text">
+                    <p class="client-text">Gracias a gml por la excelente producción, por aguantarme y hacer que todo salga como esperaba. Súper contenta con las fotos y la forma de trabajar!! ❤️ Recomendadisimos❤️❤️</p>
+                </div>
+                <div class="testimonial-client">
+                    <p class="client-name">ROCHI TERRANA</p>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-text">
+                    <p class="client-text">Quiero agradecer a Gml por la producción para los 15 de mi hija!!.Estoy altamente satisfecha</p>
+                </div>
+                <div class="testimonial-client">
+                    <p class="client-name">‎LAURA FRIAS</p>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-text">
+                    <p class="client-text">Quería agradecer a Gml Quince que hizo un hermoso trabajo. Es un gran equipo. Los recomiendo</p>
+                </div>
+                <div class="testimonial-client">
+                    <p class="client-name">VALERIA ANDREA DAMBROSIO</p>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-text">
+                    <p class="client-text">Gracias a todo el equipo de Gml por su trabajo, su onda, la calidad y calidez de su trabajo. German, Eze, Nacho. mi hija fue muy feliz haciendo las fotos y mas aun cuando vio el resultado. Valio la pena hacer 400km para que Uds sean los que hagan perdurar en el tiempo la noche mas feliz de su vida. son lo mas!!!!</p>
+                </div>
+                <div class="testimonial-client">
+                    <p class="client-name">‎MATI DIMODICA‎</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- END TESTIMONIAL SECTION -->
 
+
+
+
     <!-- START PATNERS SECTION -->
+    <section class="patners">
+        
+    </section>
     <!-- END PATNERS SECTION -->
 
 
 
 
-    <!-- START CONTACT SECTION 
+    <!-- START CONTACT SECTION -->
     <section class="contact-section" id="gml-contact">
-
-
-
-        
-
+        <div class="container">
+            <h1 class="text-uppercase text-center title py-5">CONÓCENOS</h1>
+            <div class="container">
+                <form action="" class="contact-form pt-5">
+                    <h1 class="contact-title mt-4">Nombre (obligatorio)</h1>
+                    <input type="text" class="contact-box" name="name">
+                    <h1 class="contact-title mt-4">Correo Electrónico (obligatorio)</h1>
+                    <input type="e-mail" class="contact-box" name="name">
+                    <h1 class="contact-title mt-4">Asunto</h1>
+                    <input type="text" class="contact-box" name="name">
+                    <h1 class="contact-title mt-4">Mensaje</h1>
+                    <textarea name="message" id="message" class="contact-box" rows="20"></textarea>
+                    <input type="submit" class="contact-box text" name="name" placeholder="Enviar" value="Enviar">
+                </form>
+            </div>
+        </div>
     </section>
-    END CONTACT SECTION -->
+    <!-- END CONTACT SECTION -->
 
     <!-- START FOOTER SECTION -->
     <section class="gml-info">
@@ -508,6 +574,7 @@
     </section>
     <!-- END FOOTER SECTION -->
 
+    <script src="js/addClass.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
