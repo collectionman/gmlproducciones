@@ -176,7 +176,18 @@ body {
   font-weight: bold;
   font-style: italic;
 }
+.slogan img {
+  position: relative;
+  left: 60px;
+  width: 500px;
+}
 
+@media screen and (max-width: 360px) {
+  .slogan img {
+    width: 260px;
+    left: -10px;
+  }
+}
 .phrase-box {
   background: #000000;
 }
@@ -199,6 +210,12 @@ body {
   color: #222222;
 }
 
+@media screen and (max-width: 360px) {
+  .phrase-box .contact-btn {
+    padding: 5px 10px;
+    display: inline-block;
+  }
+}
 .services i {
   float: left;
   padding-right: 10px;
@@ -274,11 +291,13 @@ body {
 }
 
 .wrapper {
-  background: url(../../images/panoramics/panoramic_2.jpeg);
-  height: 470px;
+  background: url(../../images/panoramics/panoramic_2.jpeg) no-repeat;
+  height: 400px;
+  background-size: cover;
+  overflow: hidden;
 }
 .wrapper .testimonial-slider {
-  padding: 150px 50px;
+  padding: 120px 50px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -310,7 +329,7 @@ body {
 }
 
 .contact-section {
-  background: url(../../images/social/tropical_0.jpeg) no-repeat;
+  background: url(../../images/social/sky.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
@@ -318,7 +337,6 @@ body {
 }
 .contact-section .title {
   color: #ffffff;
-  text-shadow: 3px 3px 2.5px #000000;
   border-bottom: 1px solid #ffffff;
   font-size: 30px;
 }
@@ -329,18 +347,21 @@ body {
 }
 .contact-section .contact-form .contact-title {
   color: #ffffff;
-  text-shadow: 3px 3px 2.5px #000000;
-  font-size: 22.5px;
+  font-size: 20px;
+  font-weight: 100;
 }
 .contact-section .contact-form .contact-box {
   border: 2px solid #ffffff;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   width: 65%;
   height: 47.5px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
 }
 .contact-section .contact-form .contact-box:focus {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.5);
 }
 .contact-section .contact-form textarea.contact-box {
   height: 200px;
@@ -348,6 +369,7 @@ body {
 .contact-section .contact-form input[type=submit].contact-box {
   background: rgba(255, 255, 255, 0.2);
   color: #ffffff;
+  text-transform: uppercase;
   text-shadow: 1px 1px 5px #000000;
   font-weight: bold;
   transition: all 0.6s;
@@ -364,6 +386,8 @@ body {
 }
 .gml-info .info-title {
   color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  width: 75%;
 }
 .gml-info .social-icon-wrap {
   width: 35px;
@@ -386,6 +410,12 @@ body {
 .gml-info .social-icon-wrap:hover {
   background: #ffffff;
   color: #222222;
+}
+
+@media screen and (max-width: 360px) {
+  .gml-info p, .gml-info span {
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
