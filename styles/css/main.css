@@ -324,8 +324,9 @@ body {
     display: none;
   }
 }
-.patners {
-  height: 200px;
+.patners img {
+  width: 200px;
+  height: 150px;
 }
 
 .contact-section {
