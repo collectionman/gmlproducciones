@@ -1,4 +1,4 @@
 styles/scss
 *.scss
 package.json
-js
+./js
