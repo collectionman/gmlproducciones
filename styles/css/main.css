@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Tangerine");
+@import url("https://fonts.googleapis.com/css?family=Radley");
 body {
   margin: 0;
   padding: 0;
@@ -127,10 +127,8 @@ body {
 }
 
 .italic {
-  font-family: "Tangerine", cursive;
-  font-size: 34px;
-  font-weight: bold;
-  line-height: 35px;
+  font-size: 18px;
+  font-weight: 100;
   color: #878787;
 }
 
@@ -270,7 +268,9 @@ body {
   display: inline-block;
   margin: 120px auto;
 }
-.team .team-info img {
+.team .team-info .team-img {
+  border-radius: 50%;
+  box-shadow: 1.5px 1.5px 5px #878787, -1.5px -1.5px 5px #878787;
   height: 200px;
   width: 200px;
 }
@@ -309,8 +309,7 @@ body {
 .wrapper .testimonial-slider .testimonial-text .client-text {
   color: #ffffff;
   text-shadow: -1px -1px 3px #000000;
-  font-family: "Tangerine", cursive;
-  font-size: 38px;
+  text-transform: uppercase;
   font-weight: bold;
 }
 .wrapper .testimonial-slider .testimonial-client .client-name {
